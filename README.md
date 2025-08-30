@@ -90,7 +90,20 @@ source ~/.zshrc
 
 ## 卸载方法
 
-脚本会自动生成卸载脚本：
+### 方法一：使用仓库中的卸载脚本
+
+```bash
+# 如果从仓库克隆
+cd install-zsh
+./uninstall-zsh.sh
+
+# 或直接下载执行
+curl -fsSL https://raw.githubusercontent.com/joytianya/install-zsh/main/uninstall-zsh.sh | bash
+```
+
+### 方法二：安装后生成的卸载脚本
+
+安装脚本运行后会在用户目录生成卸载脚本：
 
 ```bash
 ~/uninstall-zsh.sh
